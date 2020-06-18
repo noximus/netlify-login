@@ -5,6 +5,10 @@ import App from './App';
 import store from './app/store';
 import { Provider } from 'react-redux';
 import * as serviceWorker from './serviceWorker';
+import netlifyIdentity from 'netlify-identity-widget';
+
+var buttons = document.createElement('div');
+netlifyIdentity.init();
 
 ReactDOM.render(
   <React.StrictMode>
